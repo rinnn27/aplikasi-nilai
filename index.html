@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aplikasi Nilai</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="apk text-center">
+        <h1>Aplikasi Nilai</h1>
+    </div>
+    <form id="nilaiForm">
+        <div class="form-section">
+            <label for="nim">NIM</label>
+            <input type="text" id="nim" name="nim"><br><br>
+            <label for="nama">Nama</label>
+            <input type="text" id="nama" name="nama"><br><br>
+        </div>
+
+        <div class="container">
+            <div class="row justify-content">
+                <div class="col-md-6">
+                    <div class="form-section bordered-box">
+                        <h2 class="text-center">Nilai Teori</h2><hr>
+                        <label for="presensi-teori">Presensi:</label>
+                        <input type="text" id="presensi-teori" name="presensi-teori"><br><br>
+                        <label for="tugas-teori">Tugas:</label>
+                        <input type="text" id="tugas-teori" name="tugas-teori"><br><br>
+                        <label for="uts-teori">UTS:</label>
+                        <input type="text" id="uts-teori" name="uts-teori"><br><br>
+                        <label for="uas-teori">UAS:</label>
+                        <input type="text" id="uas-teori" name="uas-teori"><br><br>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-section bordered-box">
+                        <h2 class="text-center">Nilai Praktik</h2><hr>
+                        <label for="presensi-praktik">Presensi:</label>
+                        <input type="text" id="presensi-praktik" name="presensi-praktik"><br><br>
+                        <label for="tugas-praktik">Tugas:</label>
+                        <input type="text" id="tugas-praktik" name="tugas-praktik"><br><br>
+                        <label for="uts-praktik">UTS:</label>
+                        <input type="text" id="uts-praktik" name="uts-praktik"><br><br>
+                        <label for="uas-praktik">UAS:</label>
+                        <input type="text" id="uas-praktik" name="uas-praktik"><br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <div class="buttons">
+        <button type="button" onclick="simpan()" class="btn btn-primary">Simpan</button>
+        <button type="button" id="batal" class="btn btn-danger">Batal</button>
+    </div><hr>
+
+    <h2>Rincian Nilai</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>NIM</th>
+                <th>Nama</th>
+                <th>Presensi</th>
+                <th>Tugas</th>
+                <th>UTS</th>
+                <th>UAS</th>
+                <th>Nilai Akhir</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody id="rincian-nilai">
+        </tbody>
+    </table><br>
+
+    <button type="button" id="reset" class="btn btn-warning">Reset</button>
+        
+    <script src="main.js"></script>
+</body>
+</html>

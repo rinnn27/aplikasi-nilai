@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(172, 203, 250);
+    padding: 35px;
+}
+.form-section {
+    margin-bottom: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+.bordered-box {
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: white;
+    text-align: center;
+}
+table{
+    background-color: rgb(92, 141, 187);
+}
+#batal{
+    background-color: red;
+    width: 90px;
+}
+#reset{
+    background-color: yellow;
+    border: 5px;
+}
